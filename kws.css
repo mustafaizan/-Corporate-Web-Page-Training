@@ -1,0 +1,231 @@
+.logo{
+    height: 50px;
+}
+.ayrac{
+    font-size: 20px;
+    margin: 0px 20px; /* font-size ile yazıları büyütüp ortaladık.  sağ sol 20 px verdik */
+    color: rgba(108, 136, 189, 0.781);
+}
+.nav-bg{
+    background-color: rgba(85, 85, 85, 0.479);
+}
+.header-yuk{
+    height: calc(50vh - 70px);  /* Navbar 70 px 50 oranında azaltacağız. 
+     yüzden navbarın pikselini yüzde 50 den çıkardık */
+ }
+
+ .hedefler img{
+    height: 200px;
+    width: 200px;
+ }
+
+ .sayfa-baslik h3{
+    color: #f4b70b;
+    font-weight: bold;
+ }
+ .sayfa-baslik p{
+    color: #ffff;
+    font-weight: bold;
+ }
+ 
+.ust-kisim{
+    background-image: url(pictures/nucb4z97b3q78mjk.jpg);
+    height: 100vh;
+    width: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     /* 100vh tamamı 100% kaplaması için 
+     eğer yükseklik ve genişlik girilmezse background görülmez*/
+     /* Cover ana çerçeveye oturmasını sağlıyor.
+     Position ise x ve y eksenlerinde ortaladık. Böylece tam otursun 
+     - Fixed ile Paralax özelliğini veriyoruz.*/
+}
+.ust-kisim-sayfalar{
+    background-image: url(pictures/istockphoto-1319613142-612x612.jpg);
+    height: 50vh;
+    width: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     /* 100vh tamamı 100% kaplaması için 
+     eğer yükseklik ve genişlik girilmezse background görülmez*/
+     /* Cover ana çerçeveye oturmasını sağlıyor.
+     Position ise x ve y eksenlerinde ortaladık. Böylece tam otursun 
+     - Fixed ile Paralax özelliğini veriyoruz.*/
+}
+
+
+.nav-item a{
+    color:azure;
+    font-size: 16px; 
+    font-weight: bold;
+
+    /* Burada nav-item'ın içinde bulunan a etiketlerini etkiledik*/
+}
+.nav-item a:hover{
+    color:rgba(84, 161, 250, 0.89)
+
+    /* Hover ile nav itemdaki a etiketlerin yazısının üstüne geldiğimizde renk değişimini sağladık*/
+
+
+
+}
+
+.navbar-toggler{
+    color: #f4b70b;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media screen and (max-width:992px) {
+
+    .ayrac{
+        display:none;
+    }
+    .nav-item:hover{
+        background-color: rgba(185, 139, 228, 0.575);
+    }
+
+    .navbar-toggler{
+        z-index: 999;
+        position: fixed;
+        right: 10px;
+        top: 20px;
+
+       
+    }
+
+    .navbar-toggler:hover{
+        border: 1px solid black;
+    }
+
+    .pozisyon{
+        width: 100%;
+        height: 100vh;
+        background-color: #70a9f3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-top: 70px;
+       
+        
+    
+
+    }
+}
+
+.bosluk{
+    margin-top: 100px;
+}
+
+/* Teklif Kısmı*/
+
+.teklif{
+    height: 0px;
+}
+.tirnak{
+    color:#f4b70b ;
+    font-size: 30px;
+    font-weight: bold;
+}
+.imza{
+    font-size: 20px;
+}
+
+/* Hizmetlerimiz */
+.hizmetlerimiz{
+    background-color: #f4b70b;
+   
+}
+
+.imgbg{
+    height: 200px;
+    width: 200px;
+}
+
+
+/* Çalışanlar*/
+
+
+/* Responsive tasarımlarda yanyana dizilen öğelerde width verilirse mobili kaydırılır öğe x width ile anlarız */
+
+ /* Slogan */
+
+.tirnak1{
+    color:#f4b70b ;
+    font-size: 52px;
+    font-weight: bold;
+}
+.soz{
+    font-size: 40px;
+    color:white;
+}
+.slogan{
+    background-image: url(pictures/pngtree-technology-background-simple-light-color-luxurious-image_28213.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center center;
+   height: 500px;
+}
+.rocket-icon{
+    color: white;
+    font-size:150px ;
+}
+
+/* Çalışmalarımız */
+.calisma{
+padding: 5px;
+border: 1px solid transparent;
+
+}                                        /* Padding varken hover verilen piksel de kayma yapar. 
+                                           Bu yüzden border solid transparent vererek görünmemesini sağladık.*/
+.calisma:hover{
+    border: 1px solid gray;
+    cursor:pointer;
+}
+.calisma_img{
+    height: 150px;
+    
+}
+
+/* Footer*/
+.footer{
+    background-color: #2C3E50;
+    height: 300px;
+    color: #95a5a6;
+    
+}
+.footer p{
+    font-size: 18px;
+}
+.footer-sutun{
+    height: 300px;
+}
+
+/* Portföyümüz Sayfası */
+
+.kurumsal-calisma{
+
+    height: 150px;
+}
+
+/* Bloga Sayfası*/
+
+.devam a:hover{
+    color: black !important;
+}
+
+
+/* İletişim Sayfası*/
+
+.simgeler{
+    font-size: 16px;
+}
